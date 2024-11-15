@@ -65,7 +65,7 @@ function App() {
                 </span>
                     <div className="best-sold-info tv-info">
                         <h3>{nameTv(bestSellingTv)}</h3>
-                        <p>{priceConverter(bestSellingTv)}</p>
+                        <h2>{priceConverter(bestSellingTv)}</h2>
                         <p>{sizes(bestSellingTv.availableSizes)}</p>
                         <p><img className="icon" src={check} alt="check icoon"/> wifi <img className="icon" src={minus} alt="minus icoon"/> speech <img className="icon"
                             src={check} alt="check icoon"/> hdr <img className="icon" src={check} alt="check icoon"/> bluethoot <img className="icon"
@@ -84,11 +84,11 @@ function App() {
                     {inventory.map((inventorie) => {
                         return <div key={inventorie.id} className="tv-block">
                               <span className="tv-img">
-                                  <img src={inventorie.sourceImg} alt="Samsung tv"/>
+                                  <img src={inventorie.sourceImg} alt="tv"/>
                              </span>
                             <div className="tv-info">
                                 <h3>{nameTv(inventorie)}</h3>
-                                <p>{priceConverter(inventorie)}</p>
+                                <h2>{priceConverter(inventorie)}</h2>
                                 <p>{sizes(inventorie.availableSizes)}</p>
                                 <ul>
                                     {inventorie.options.map((optie) => {

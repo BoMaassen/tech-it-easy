@@ -51,7 +51,19 @@ section, h1 {
 .for-sale-tv p {
     color: red;
 }
-/*-----TV BLOKKEN-----*/
+/*-----Algemeen-----*/
+ul{
+    display: flex;
+    flex-direction: row;
+}
+
+li  {
+    list-style-type: none;
+}
+
+h2, h3{
+    font-size: 30px;
+}
 
 
 /*-----BEST VERKOCHTE TV-----*/
@@ -66,7 +78,7 @@ section, h1 {
     width: 10px;
 }
 
-.best-sold-info p, h3 {
+.best-sold-info p {
     padding: 10px;
 }
 
@@ -75,7 +87,32 @@ section, h1 {
     display: flex;
     justify-content: left;
     align-items: center;
+    margin: 20px 0px;
+}
 
+.tv-info {
+    flex-basis: 500px;
+}
+.tv-info ul {
+    justify-content: space-between;
+}
+
+.tv-img{
+    flex-basis: 500px;
+    padding: 10px 20px 10px 0;
+}
+.tv-img img{
+   width: 100%
 }
 
 /*-----FOOTER-----*/
+footer{
+    height: 75px;
+    background-color: black;
+    color: white;
+}
+footer ul {
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+}
