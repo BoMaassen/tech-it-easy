@@ -1,9 +1,9 @@
 import {inventory} from "../constants/inventory.js";
 
-function purchased(){
+function purchased(array){
     let purchasedTv = 0;
-    for (let i = 0; i < inventory.length ; i ++){
-        purchasedTv = purchasedTv + inventory[i].originalStock
+    for (let i = 0; i < array.length ; i ++){
+        purchasedTv = purchasedTv + array[i].originalStock
     }
     return purchasedTv;
 }
