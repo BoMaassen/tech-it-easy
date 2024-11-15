@@ -51,26 +51,31 @@ section, h1 {
 .for-sale-tv p {
     color: red;
 }
+/*-----TV BLOKKEN-----*/
+
 
 /*-----BEST VERKOCHTE TV-----*/
 .best-sold-block {
     background-color: lightgray;
     border: 2px dashed black;
     border-radius: 3px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
 
 }
 
-.tv-img {
-    padding: 20px;
-}
-
-.best-sold-info img {
+.icon {
     width: 10px;
 }
 
 .best-sold-info p, h3 {
     padding: 10px;
 }
+
+/*-----ALLE TVs-----*/
+.tv-block {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+/*-----FOOTER-----*/
