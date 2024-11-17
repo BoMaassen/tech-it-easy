@@ -8,7 +8,6 @@ import priceConverter from "./helpers/priceConverter.js";
 import sizes from "./helpers/sizes.js";
 import check from './assets/check.png';
 import minus from './assets/minus.png';
-import tv from './assets/tv.png'
 import {inventory} from "./constants/inventory.js";
 
 function App() {
@@ -41,7 +40,7 @@ function App() {
                 <h1>Tech it easy dashboard</h1>
             </header>
             <section>
-                <h2>Verkoopoverzicht</h2>
+                <h2 className="section-title">Verkoopoverzicht</h2>
                 <div className="stats">
                     <div className="sold-tv stats-blok">
                         <p>Aantal verkochte producten</p>
@@ -58,7 +57,7 @@ function App() {
                 </div>
             </section>
             <section>
-                <h2>Best verkochte tv</h2>
+                <h2 className="section-title">Best verkochte tv</h2>
                 <div className="best-sold-block tv-block">
                 <span className="tv-img">
                 <img src={bestSellingTv.sourceImg} alt="Samsung tv"/>
@@ -74,7 +73,7 @@ function App() {
                 </div>
             </section>
             <section>
-                <h2>Alle tvs</h2>
+                <h2 className="section-title">Alle tvs</h2>
                 <div>
                 <button type="button" onClick={youClickedMostSold}>Meest verkocht eerst</button>
                 <button type="button" onClick={youClickedCheap}>Goedkoopste eerst</button>

@@ -12,6 +12,8 @@ section, h1 {
 
 .stats {
     display: flex;
+    justify-content: space-between;
+    margin: 0 30px;
 }
 
 .stats-blok {
@@ -20,14 +22,18 @@ section, h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    flex-basis: 250px;
-    height: 100px;
+    justify-content: space-evenly;
+    flex-basis: 400px;
+    height: 300px;
+}
+.stats-blok p {
+    font-size: 20px;
 }
 
 .sold-tv {
     background-color: lightgreen;
     border: 2px solid green;
+
 }
 
 .sold-tv p {
@@ -65,6 +71,14 @@ h2, h3{
     font-size: 30px;
 }
 
+.section-title{
+    padding: 25px 0 20px 0;
+}
+
+button {
+    margin-right: 10px;
+    padding: 5px 10px;
+}
 
 /*-----BEST VERKOCHTE TV-----*/
 .best-sold-block {
@@ -76,10 +90,7 @@ h2, h3{
 
 .icon {
     width: 10px;
-}
-
-.best-sold-info p {
-    padding: 10px;
+    margin-right: 5px;
 }
 
 /*-----ALLE TVs-----*/
@@ -87,19 +98,29 @@ h2, h3{
     display: flex;
     justify-content: left;
     align-items: center;
-    margin: 20px 0px;
+    height: 400px;
 }
 
 .tv-info {
-    flex-basis: 500px;
+    flex-basis: 550px;
+    height: 175px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .tv-info ul {
     justify-content: space-between;
 }
+.tv-info li {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
 
 .tv-img{
     flex-basis: 500px;
-    padding: 10px 20px 10px 0;
+    margin: 10px 30px;
 }
 .tv-img img{
    width: 100%
